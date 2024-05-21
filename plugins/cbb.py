@@ -10,7 +10,7 @@ async def cb_handler(client: Bot, query: CallbackQuery):
     data = query.data
     if data == "about":
         await query.message.edit_text(
-            text = f"<b>• 𝖬𝖺𝗇𝖺𝗀𝖾𝖽 𝖡𝗒 : @TamilMoviesDawOfficial</b>",
+            text = f"• 𝖬𝖺𝗇𝖺𝗀𝖾𝖽 𝖡𝗒 : <b>@TamilMoviesDawOfficial</b>",
             disable_web_page_preview = True,
             reply_markup = InlineKeyboardMarkup(
                 [
