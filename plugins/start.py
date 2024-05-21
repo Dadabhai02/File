@@ -33,7 +33,7 @@ async def send_message_to_channel(client, message, base64_string, id, last_messa
         fname = media.file_name if media and media.file_name else ""
         link = f"https://telegram.me/{client.username}?start={base64_string}"
 
-        await sent_msg.reply_text(f"<b>⚠️ Note : This File/Video will be deleted in 10 mins ❌ (Due to Copyright Issues).\n\nPlease forward this File/Video to your Saved Messages/Friends and Start Download there</b>", disable_web_page_preview=True, quote=True)
+        await sent_msg.reply_text(f"<b>⚠️ Note : This File/Video Will Be Deleted in 10 Mins ❌ (Due to Copyright Issues).\n\nPlease Forward This File/Video To Your Saved Messages/Friends And Start Download There</b>", disable_web_page_preview=True, quote=True)
         await asyncio.sleep(0.5)
         asyncio.create_task(delete_after_delay(sent_msg, 10 * 60))
 
@@ -45,7 +45,7 @@ async def send_message_to_channel(client, message, base64_string, id, last_messa
         fname = media.file_name if media and media.file_name else ""
         link = f"https://telegram.me/{client.username}?start={base64_string}"
 
-        await sent_msg.reply_text(f"<b>⚠️ Note : This File/Video will be deleted in 10 mins ❌ (Due to Copyright Issues).\n\nPlease forward this File/Video to your Saved Messages/Friends and Start Download there</b>", disable_web_page_preview=True, quote=True)
+        await sent_msg.reply_text(f"<b>⚠️ Note : This File/Video Will Be Deleted in 10 Mins ❌ (Due to Copyright Issues).\n\nPlease Forward This File/Video To Your Saved Messages/Friends And Start Download There</b>", disable_web_page_preview=True, quote=True)
         await asyncio.sleep(0.5)
         asyncio.create_task(delete_after_delay(sent_msg, 10 * 60))
 
